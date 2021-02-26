@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.mapbox.common.Logger
 import com.mapbox.maps.*
-import com.mapbox.maps.extension.observable.getEventData
-import com.mapbox.maps.extension.observable.subscribeResourceRequest
-import com.mapbox.maps.extension.observable.unsubscribeResourceRequest
+import com.mapbox.maps.extension.observable.resourcerequest.getEventData
+import com.mapbox.maps.extension.observable.resourcerequest.subscribeResourceRequest
+import com.mapbox.maps.extension.observable.resourcerequest.unsubscribeResourceRequest
 import com.mapbox.maps.plugin.compass.getCompassPlugin
 import com.mapbox.maps.plugin.scalebar.ScaleBarPlugin
 import com.mapbox.maps.plugin.scalebar.getScaleBarPlugin

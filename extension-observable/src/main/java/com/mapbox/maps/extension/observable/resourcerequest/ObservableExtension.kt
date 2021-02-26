@@ -1,8 +1,9 @@
-package com.mapbox.maps.extension.observable
+package com.mapbox.maps.extension.observable.resourcerequest
 
 import com.google.gson.Gson
 import com.mapbox.common.ValueConverter
 import com.mapbox.maps.Event
+import com.mapbox.maps.MapEvents
 import com.mapbox.maps.ObservableInterface
 import com.mapbox.maps.Observer
 
@@ -15,7 +16,7 @@ import com.mapbox.maps.Observer
  * @param observer an Observer
  */
 fun ObservableInterface.subscribeResourceRequest(observer: Observer) =
-  subscribe(observer, listOf("resource-request"))
+  subscribe(observer, listOf(MapEvents.RESOURCE_REQUEST))
 
 /**
  * Unsubscribes an Observer for event types "resource-request".
@@ -23,7 +24,7 @@ fun ObservableInterface.subscribeResourceRequest(observer: Observer) =
  * @param observer an Observer
  */
 fun ObservableInterface.unsubscribeResourceRequest(observer: Observer) =
-  unsubscribe(observer, listOf("resource-request"))
+  unsubscribe(observer, listOf(MapEvents.RESOURCE_REQUEST))
 
 /**
  * Get the parsed event data.
